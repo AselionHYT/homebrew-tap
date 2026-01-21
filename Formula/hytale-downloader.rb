@@ -5,13 +5,13 @@
 class HytaleDownloader < Formula
   desc "Native macOS ARM64 downloader for Hytale game files"
   homepage "https://github.com/AselionHYT/hytale-downloader"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/AselionHYT/hytale-downloader/releases/download/v1.0.0/hytale-downloader_1.0.0_darwin_arm64.tar.gz"
-      sha256 "66bb759b0df2c0277bb4747a9a316153c8f87b4065a5be1a8ab1cf9c890d8b2a"
+      url "https://github.com/AselionHYT/hytale-downloader/releases/download/v1.0.1/hytale-downloader_1.0.1_darwin_arm64.tar.gz"
+      sha256 "5f8634a00f8caa214a0ee5af0ddadefee3c91275c2b0f4ee6ab18371450e37e2"
 
       def install
         bin.install "hytale-downloader"
@@ -21,8 +21,8 @@ class HytaleDownloader < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AselionHYT/hytale-downloader/releases/download/v1.0.0/hytale-downloader_1.0.0_linux_amd64.tar.gz"
-      sha256 "299a0f873a3f8b4f7abef23d981d3c8831c2eaeee436df836e40433ece976bf6"
+      url "https://github.com/AselionHYT/hytale-downloader/releases/download/v1.0.1/hytale-downloader_1.0.1_linux_amd64.tar.gz"
+      sha256 "9485da14783d42158249a19c577b248daa136f9b0a9ccb77932a223273abdad9"
       def install
         bin.install "hytale-downloader"
       end
